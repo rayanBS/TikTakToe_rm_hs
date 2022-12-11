@@ -22,11 +22,7 @@ jobs:
           ls
       - name: Run build-wrapper
         run: |
-<<<<<<< Updated upstream
           build-wrapper-win-x86-64 --out-dir ${{ env.BUILD_WRAPPER_OUT_DIR }} gcc ./src/main.c
-=======
-          build-wrapper-win-x86-64 --out-dir ${{ env.BUILD_WRAPPER_OUT_DIR }} gcc
->>>>>>> Stashed changes
       - name: Run sonar-scanner
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
