@@ -55,7 +55,8 @@
  * combo can be reset for a new game.
  */
 void	cr_refresh(LPCOMBOROW cr) {
-	int	i, j;
+	int i;
+	int j;
 
 	// When refreshing a combo, we re-assert that it has no owner (yet)
 	cr->m_owner = GB_NOONE;
